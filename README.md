@@ -1,12 +1,14 @@
 # portfolio
-developer portfolio
+
+Developer portfolio
 
 ## Tasks
-The control of the tasks of this project will be carried out on Github
+
+The control's tasks of this project will be carried out on Github
 
 ## Icons
-:package: New features
-:up: update
-:beatle: fix bug
-:checkered_flag: releasebealte
+- :package: New features
+- :up: update
+- :beetle: fix bug
+- :checkered_flag: release
 
