@@ -158,7 +158,7 @@ header{
 }
 
 .banner button:hover{
-  opacity: 0.8;
+  opacity: 0,8;
   color: #000;
 }
 
@@ -284,10 +284,10 @@ transition: background-color 1s;
 }
 
 .sessao-header h1{
-  font-family: var(--font-primary);
+  font-family: var(--font-secundary);
   font-size: 3rem;
-  color: #C6426E;
-  border-bottom: solid 3px #642B73;
+  color: #4b4b4b;
+  border-bottom: solid 3px #C6426E;
   margin-bottom: 2.5rem;
   padding: 2rem;
 }
@@ -300,6 +300,7 @@ transition: background-color 1s;
 
 .knowledge-header i{
   font-size: 2.5rem;
+  color: #4286f4;
 }
 
 .knowledge-header h3{
@@ -317,17 +318,98 @@ transition: background-color 1s;
   grid-column: 7 / 11;
   grid-row: 2 /6;
   width: 100%;
-  
+
 }
 
 
 .knowledges-img-wrapper img{
 object-fit: cover;
-width: 100%;
-border-radius: 85%;
+width: 85%;
+border-radius:100%;
+height: 75%;
 
 }
 
+.projects{
+  display: flex;
+  justify-content: space-evenly;
 
+}
 
+.card{
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
 
+.card-img-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: .5rem;
+}
+
+.card-img-wrapper img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+  transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img{
+  opacity: .5;
+}
+
+.card-info{
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2rem;
+  text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+  transition: all .3s;
+}
+
+.card-info h2{
+  font-family: var(--font-secundary);
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #eee;
+}
+
+.card-info h3{
+  font-family: var(--font-action);
+  font-weight: bolder;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+}
+
+.card-info p{
+  font-family: var(--font-secundary);
+  color: #eee;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.card-info button{
+  width: 8rem;
+  height: 2.5rem;
+  background-color:#642B73;  
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73); 
+  background: linear-gradient(to left, #C6426E, #642B73);
+  font-family: var(--font-action);
+  font-size: .7rem;
+  color: #eee;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0.1rem .5rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info{
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
