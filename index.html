@@ -35,10 +35,10 @@
         <nav>
           <ul class="menu">
             <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="#knowledges" class="menu-link">knowledge</a></li>
+            <li class="menu-item"><a href="#knowledges" class="menu-link">Skills</a></li>
             <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
             <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
-            <li class="menu-item"><a href="#budget" class="menu-link">Budget</a></li>
+            <li class="menu-item"><a href="#quote" class="menu-link">Quote</a></li>
           </ul>
         </nav>
         <div class="social-media">
@@ -125,7 +125,7 @@
               <h2>Podcastr</h2>
               <h3>Typescript</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, dui ac dignissim commodo, est nisi laoreet sapien, eget hendrerit sem sem sit amet ligula. Praesent ultricies volutpat tortor, id sagittis nibh sollicitudin eu. </p>
-              <button>More info</button>
+              <button class="btn">More info</button>
             </div>
           </div>    
           <div class="card">
@@ -136,7 +136,7 @@
             <h2>TeamWell</h2>
               <h3>Ruby</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, dui ac dignissim commodo, est nisi laoreet sapien, eget hendrerit sem sem sit amet ligula. Praesent ultricies volutpat tortor, id sagittis nibh sollicitudin eu. </p>
-              <button>More info</button>
+              <button class="btn">More info</button>
           </div>
         </div>
         <div class="card">
@@ -147,11 +147,62 @@
               <h2>Mr.Cocktail</h2>
               <h3>HTML,CSS</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, dui ac dignissim commodo, est nisi laoreet sapien, eget hendrerit sem sem sit amet ligula. Praesent ultricies volutpat tortor, id sagittis nibh sollicitudin eu. </p>
-              <button>More info</button>
+              <button class="btn">More info</button>
             </div>
           </div>
         </div>
         
+      </section>
+
+      <section class="sessao-contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1>Contact</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="name">
+                <label for="name" class="field-label">Name</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email">
+                <label for="email" class="field-label">Email</label>
+              </div>
+              <div class="input-group">
+               <textarea class="field" id="message"></textarea>
+                <label for="message" class="field-label">Message</label>
+              </div>
+              <button type="submit" class="btn btn-submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="sessao-quote" id="orcamento">
+        <div class="quote-wrapper">
+          <h1>Get a quote</h1>
+          <form>
+            <label for="numbers">Numbers of pages</label>
+            <input type="number" min="1" name="numbers" id="numbers">
+            <label for="js">I need a script JS</label>
+            <input type="checkbox" name="js" id="js">
+            <label>Layout</label>
+            <div class="group-layout">
+              <div>
+                <input type="radio" name="layout" id="layout-yes">
+                <label for="layout-yes">I need a layout</label>
+              </div>
+              <div>
+                <input type="radio" name="layout" id="layout-no">
+                <label for="layout-no">I already have a layout</label>
+             </div>
+            </div>
+            <label for="deadline">Deadline</label>
+            <input type="range" name="deadline" id="deadline" min="1" max="10">
+            <label id="price">€ 0,00</label>
+            <button class="btn btn-quote" type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </div>
   </body>
