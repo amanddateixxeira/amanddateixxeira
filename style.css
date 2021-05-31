@@ -14,6 +14,10 @@
    --font-action: "Montserrat", serif ;
  }
 
+ html{
+   scroll-behavior: smooth;
+ }
+
  .hamburguer{
    /*background-color: red;*/
    width: 2rem;
@@ -180,6 +184,7 @@ header{
   top: 0;
   right: -20rem;
   transition: all 1s;
+
 }
 
 .show-menu .sidebar{
@@ -557,6 +562,7 @@ font-size: 0.7rem;
     font-weight: lighter;
     box-shadow:  0 0.1rem 0.3rem rgba(0, 0, 0, .5);
     border-radius: 10px;
+    
   }
 
   .sessao-quote form{
@@ -590,4 +596,53 @@ font-size: 0.7rem;
     cursor: pointer;
     grid-column: 2rem;
 
+  }
+
+  footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+  }
+
+  .social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+
+  }
+
+  .social-list ul{
+    display: flex;
+  }
+
+  #top-link{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color:#642B73;  
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73); 
+    background: linear-gradient(to left, #C6426E, #642B73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow:  0 0.1rem 0.6rem #00000009;
   }
